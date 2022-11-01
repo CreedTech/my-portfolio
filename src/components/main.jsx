@@ -104,7 +104,7 @@ const Main = () => {
             Github
           </motion.h2>
         </Github>
-        <RESUME to={{pathname:'/CV.pdf'}}>
+        <RESUME to={{pathname:'https://drive.google.com/file/d/1ulfWL7zmwCSqkdfzjmFMWthNy5uz0KQJ/view?usp=sharing'}}>
           <motion.h2
           initial={{
             y:-200,
