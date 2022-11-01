@@ -57,7 +57,7 @@ const SocialIcons = () => {
       animate={{scale:[0,1,1.5,1]}}
       transition={{type:'spring', duration:1, delay:1.4}}
       >
-        <NavLink style={{ color: "#ffffff" }} target="_blank" to={{pathname:"https://linkedin.com/ayodele-ayoola"}}>
+        <NavLink style={{ color: "#ffffff" }} target="_blank" to={{pathname:"https://www.linkedin.com/in/ayodele-ayoola-78a5341b2"}}>
           <Linkedin className="icon" width={25} height={25} fill="currentColor" />
         </NavLink>
       </motion.div>

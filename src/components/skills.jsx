@@ -20,7 +20,7 @@ import {
   MdOutlineAndroid,
   MdOutlinePhoneIphone,
 } from "react-icons/md";
-import ParticleComponents from "../subComponents/particleComponents";
+// import ParticleComponents from "../subComponents/particleComponents";
 
 const MainContainer = styled.div`
   backgroung-color: #000;
@@ -132,10 +132,10 @@ const Skills = () => {
         <LogoComponents />
               <HomeButton size={30} style={{ position: 'fixed', top:0, backgroundColor:'transparent', zIndex:10}} />
         </Home>
-        <ParticleComponents/>
+        {/* <ParticleComponents/> */}
         <Center>
           <Box>
-            <ParticleComponents/>
+            {/* <ParticleComponents/> */}
             <Main className="skills_main">
               
               <Title>

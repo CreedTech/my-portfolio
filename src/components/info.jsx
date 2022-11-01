@@ -143,7 +143,7 @@ const Info = () => {
           >
             &lt;/span&gt;
           </code>
-        <a href="mailto:ayodeleayoolaoke4@gmail.com" class="hvr-shutter-in-horizontal about__button">Contact Me</a>
+        <a href="mailto:ayodeleayoolaoke4@gmail.com" className="hvr-shutter-in-horizontal about__button">Contact Me</a>
         </Text>
       </DarkDiv>
     </div>

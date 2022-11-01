@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import Particles from "react-particles-js";
+// import Particles from "react-particles-js";
 
-import configDark from "../config/particlesjs-config.json";
+// import configDark from "../config/particlesjs-config.json";
 
 const Box = styled.div`
   position: absolute;
@@ -16,7 +16,7 @@ const Box = styled.div`
 const ParticleComponents = (props) => {
   return (
     <Box>
-      <Particles params={configDark} />
+      {/* <Particles params={configDark} /> */}
     </Box>
   );
 };

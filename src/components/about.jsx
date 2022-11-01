@@ -4,7 +4,7 @@ import { darkTheme } from "./themes";
 import LogoComponents from "../subComponents/logoComponents";
 import SocialIcons from "../subComponents/socialIcons";
 import HomeButton from "../subComponents/powerButton";
-import ParticleComponents from "../subComponents/particleComponents";
+// import ParticleComponents from "../subComponents/particleComponents";
 import BigTitle from '../subComponents/bigTitle'
 
 import astronaut from "../assets/Images/spaceman.png";
@@ -75,7 +75,7 @@ const About = () => {
         <LogoComponents />
         <SocialIcons />
         <HomeButton />
-        <ParticleComponents />
+        {/* <ParticleComponents /> */}
 
         <Space>
           <img src={astronaut} alt="aboutImage" />
@@ -86,7 +86,7 @@ const About = () => {
           <br />
           <br />
           I'm a dedicated and conscientious developer with great communication
-            skills and excellent professional settings. I'm an independent freelancer and blogger. I
+            skills and excellent professional settings. I'm an independent freelancer. I
           love to code and debug😅. <br /><br /> excited by all the
             challenges inherent in the position and look forward to the
             opportunities it presents. You can connect with me via my

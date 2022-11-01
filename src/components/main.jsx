@@ -29,7 +29,7 @@ const Container = styled.div`
   padding: 2rem;
 `;
 
-const Resume = styled(NavLink)`
+const Github = styled(NavLink)`
   color: ${(prop) => prop.theme.text};
   position: absolute;
   top: 2rem;
@@ -38,7 +38,7 @@ const Resume = styled(NavLink)`
   z-index: 1;
 `;
 
-const BLOG = styled(NavLink)`
+const RESUME = styled(NavLink)`
   color: ${(prop) => prop.theme.text};
   position: absolute;
   top: 50%;
@@ -90,7 +90,21 @@ const Main = () => {
         <HomeButton size={30} />
         <LogoComponents />
         <SocialIcons />
-        <Resume to="/">
+        <Github to={{ pathname: "https://github.com/creedtech" }}>
+          <motion.h2
+          initial={{
+            y:-200,
+            transition: { type:'spring', duration: 1.5, delay:1}
+        }}
+        animate={{
+            y:0,
+            transition: { type:'spring', duration: 1.5, delay:1}
+        }}
+            whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+            Github
+          </motion.h2>
+        </Github>
+        <RESUME to={{pathname:'/CV.pdf'}}>
           <motion.h2
           initial={{
             y:-200,
@@ -103,21 +117,7 @@ const Main = () => {
             whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
             Resume
           </motion.h2>
-        </Resume>
-        <BLOG to="/blog">
-          <motion.h2
-          initial={{
-            y:-200,
-            transition: { type:'spring', duration: 1.5, delay:1}
-        }}
-        animate={{
-            y:0,
-            transition: { type:'spring', duration: 1.5, delay:1}
-        }}
-            whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-            Blog
-          </motion.h2>
-        </BLOG>
+        </RESUME>
         <WORK to="/work">
           <motion.h2
           initial={{
