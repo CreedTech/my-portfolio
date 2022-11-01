@@ -112,6 +112,7 @@ const Info = () => {
                   " A Mobile Developer.",
                   " A Full Stack Developer.",
                   " A Front End Developer.",
+                  " A React Developer.",
                   " A Back End Developer.",
                   " A UI/UX designer.",
                   " A Python Dev.",
