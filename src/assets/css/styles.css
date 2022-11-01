@@ -1,0 +1,116 @@
+.section {
+    position: relative;
+  height: auto;
+  padding-top: 10rem;
+  width: 100%;
+  padding-bottom: 5rem;
+  background-color: #000;
+}
+
+.bd-grid {
+  max-width: 95%;
+  display: grid;
+  grid-template-columns: 100%;
+  width: 85vw;
+}
+
+.work__container {
+  justify-items: center;
+  
+  row-gap: .5rem;
+  column-gap: .5rem;
+  /* padding-top: 1rem; */
+}
+
+.work__img {
+  position:relative;
+  left:20%;
+  border: 1px solid rgba(249, 66, 4, 0.4);
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.work__img img {
+    object-fit: cover;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.work__link {
+    text-decoration: none;
+  position: absolute;
+  /* bottom: -100%; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(249, 66, 4, 0.4);
+  border-radius: 5px;
+  cursor: pointer;
+  backdrop-filter: blur(5px);
+  transition: all 0.4s ease;
+}
+.work__img:hover img{
+    transform: scale(1.5);
+    object-fit: contain;
+    transition: all 1s ease;
+}
+.work__img:hover .work__link {
+  bottom: 0;
+  /* transform: scale(1.5); */
+}
+.work__link-name {
+    font-family: "Ubuntu Mono", monospace;
+    text-decoration: none;
+  color: #fff;
+  font-size: calc(1em + 0.5vw);
+  /* padding: 0.5rem 0; */
+  text-align: center;
+  /* padding-top: 2.5rem; */
+  font-family: "Karla", sans-serif;
+  font-weight: 700;
+}
+
+.work__link:hover .work__icon {
+  transform: translateX(0.25rem);
+}
+
+.work__icon {
+  font-size: 1rem;
+  transition: 0.4s;
+}
+
+
+/* For medium devices */
+@media screen and (min-width: 576px) {
+  .work__container {
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .bd-grid {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+  .work__container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    /* column-gap: 2rem; */
+  }
+}
+
+/* For large devices */
+@media screen and (min-width: 992px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
