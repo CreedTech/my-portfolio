@@ -1,11 +1,11 @@
 import React from "react";
-// import { NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import "../assets/css/styles.css";
 import {motion} from 'framer-motion';
 import Me from "../assets/Images/profile-img.png";
 
-const Box = styled.div`
+const Box = styled(motion(NavLink))`
   text-decoration: none;
 `;
 
@@ -23,13 +23,13 @@ const Item = {
 }
 
 const Card = (props) => {
-  const { id, name } = props.data;
+  const { id, name,link, imgSrc } = props.data;
 
   return (
     <motion.div key={id} variants={Item} className="work__img" >
-      <img src={Me} alt="NoImg"/>
+      <img src={imgSrc|| Me} alt="NoImg"/>
           <div className="work__link">
-          <Box key={id} className="work__link-name">
+          <Box key={id} className="work__link-name" to={{ pathname: link }}>
               {name}
           </Box>
           </div>

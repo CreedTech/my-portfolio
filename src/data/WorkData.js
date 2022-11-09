@@ -1,8 +1,11 @@
+import thrift from "../assets/Images/profile-img.png";
+
 export const Work = [
     {
         id:1,
         name: "Uniform Website",
         imgSrc: "",
+        link:"",
     },
     {
         id:2,
@@ -75,8 +78,9 @@ export const Work = [
     },
     {
         id:16,
-        name:"Fitness And LifeStyle Website",
-        imgSrc: "",
+        name:"Thrift Fashion Store Website",
+        imgSrc: {thrift},
+        link:"https://thriftfashion.pythonanywhere.com/",
     },
     
   
