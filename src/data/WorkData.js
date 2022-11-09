@@ -1,4 +1,4 @@
-import thrift from "../assets/Images/profile-img.png";
+import thrift from "../assets/Images/thrift.png";
 
 export const Work = [
     {
