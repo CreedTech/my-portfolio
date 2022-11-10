@@ -113,6 +113,8 @@ const Description = styled.div`
   color: ${(props) => props.theme.text};
   font-size: calc(0.6em + 0.5vw);
   padding: 0.5rem 0;
+  align-items: center;
+  text-align: center;
 `;
 const Icons = styled.div`
   color: #fff;
@@ -149,7 +151,7 @@ const Skills = () => {
                 <FaLaptopCode className="icons" size={25} />
               </Icons>
               <Description>
-                <p>Html, Css, JavaScript</p>
+                <p>Html, Css, JavaScript,React, Material Ui, Tailwind Css,Bootstrap,Styled Components</p>
               </Description>
             </Main>
             <Main className="skills_main">
@@ -163,7 +165,7 @@ const Skills = () => {
                 <FaLaptopCode className="icons" size={25} />
               </Icons>
               <Description>
-                <p>Html, Css, JavaScript</p>
+                <p>Django, Python, Asp.Net Mvc</p>
               </Description>
             </Main>
             <Main className="skills_main">
@@ -176,7 +178,7 @@ const Skills = () => {
                 <MdOutlineAndroid className="icons" size={25} color="white" />
               </Icons>
               <Description>
-                <p>Html, Css, JavaScript</p>
+                <p>Flutter, React Native</p>
               </Description>
             </Main>
             <Main className="skills_main">
@@ -193,7 +195,7 @@ const Skills = () => {
                 />
               </Icons>
               <Description>
-                <p>Html, Css, JavaScript</p>
+                <p>Flutter, React Native</p>
               </Description>
             </Main>
             <Main className="skills_main">
@@ -207,7 +209,7 @@ const Skills = () => {
                 <TbBrandGithub className="icons" size={25} />
               </Icons>
               <Description>
-                <p>Html, Css, JavaScript</p>
+                <p>Git, Github</p>
               </Description>
             </Main>
             <Main className="skills_main">
@@ -221,7 +223,7 @@ const Skills = () => {
                 <RiAppleLine className="icons" size={25} />
               </Icons>
               <Description>
-                <p>Html, Css, JavaScript</p>
+                <p>C#, JAVA</p>
               </Description>
             </Main>
           </Box>

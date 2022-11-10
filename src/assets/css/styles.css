@@ -23,8 +23,11 @@
 }
 
 .work__img {
+  width: calc(15rem + 15vw);
+  height: 60vh;
   position:relative;
   left:20%;
+  
   border: 1px solid rgba(249, 66, 4, 0.4);
   position: relative;
   overflow: hidden;
@@ -34,7 +37,7 @@
 .work__img img {
     object-fit: cover;
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
 }
 .work__link {
@@ -53,8 +56,8 @@
   transition: all 0.4s ease;
 }
 .work__img:hover img{
-    transform: scale(1.5);
-    object-fit: contain;
+    transform: scale(1.2);
+    object-fit: cover;
     transition: all 1s ease;
 }
 .work__img:hover .work__link {

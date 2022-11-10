@@ -23,16 +23,6 @@ const Box = styled(motion(NavLink))`
   justify-content: center;
   z-index: 5;
 
-  // @media  (max-width: 900px) {
-  //   width: calc(10rem + 15vw);
-  //   height: 40vh;
-  // }
-
-  @media  (max-width: 992px) {
-    width: 50vw;
-    // height: 40vh;
-  }
-
   &:hover {
     // box-shadow: 0 0 .2rem 0 ${(props) => props.theme.text};
     background-color: ${(props) => props.theme.uniqueText};
@@ -44,8 +34,9 @@ const Image = styled.div`
   background-image: ${(props) => `url(${props.img})`};
   width: 100%;
   height: 60%;
-  background-size: contain;
+  background-size: cover;
   border: 1px solid transparent;
+  background-repeat: no-repeat;
   background-position: center center;
   border-radius: 5px 5px 0 0;
 
@@ -69,6 +60,16 @@ const Title = styled.h3`
   }
 `;
 
+const HashTags = styled.div`
+padding: 0.5rem 0;
+`
+const Tag= styled.span`
+padding-right: 0.5rem;
+`
+const Date = styled.span`
+padding:0.5rem 0
+`
+
 const Container = styled(motion.div)``;
 
 // Framer motion configuration
@@ -87,14 +88,24 @@ const Item = {
 
 
 const BlogComponents = (props) => {
-  const { name, imgSrc, link } = props.blog;
+  const {name, tags, date, imgSrc, link} = props.blog;
   return (
     <Container
     variants={Item}
     >
       <Box target="_blank" to={{ pathname: link }}>
       <Image img={imgSrc}/>
-          <Title>{name}</Title>
+        <Title>{name}</Title>
+        <HashTags>
+                {
+                    tags.map((t,id) => {
+                        return <Tag key={id}>#{t}</Tag>
+                    })
+                }
+            </HashTags>
+            <Date>
+                {date}
+            </Date>
     </Box>
     </Container>
   );

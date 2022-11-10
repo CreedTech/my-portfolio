@@ -9,6 +9,7 @@ const Box = styled(motion(NavLink))`
   text-decoration: none;
 `;
 
+
 const Item = {
   hidden:{
       scale:0
@@ -26,7 +27,7 @@ const Card = (props) => {
   const { id, name,link, imgSrc } = props.data;
 
   return (
-    <motion.div key={id} variants={Item} className="work__img" >
+    <motion.div key={id} variants={Item} className="work__img">
       <img src={imgSrc|| Me} alt="NoImg"/>
           <div className="work__link">
           <Box key={id} className="work__link-name" to={{ pathname: link }}>
